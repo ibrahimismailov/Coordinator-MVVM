@@ -17,6 +17,8 @@
 		15DFEC88284DF62000B479FC /* addEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DFEC87284DF62000B479FC /* addEventViewController.swift */; };
 		15FFF87B284E1F500082422E /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFF87A284E1F500082422E /* EventListViewModel.swift */; };
 		15FFF87D284E1F610082422E /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFF87C284E1F610082422E /* AddEventViewModel.swift */; };
+		15FFF887284E22610082422E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFF886284E22610082422E /* CoreDataManager.swift */; };
+		15FFF88D284E266D0082422E /* EventList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15FFF88B284E266D0082422E /* EventList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		15DFEC87284DF62000B479FC /* addEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEventViewController.swift; sourceTree = "<group>"; };
 		15FFF87A284E1F500082422E /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		15FFF87C284E1F610082422E /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
+		15FFF886284E22610082422E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		15FFF88C284E266D0082422E /* EventList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +68,13 @@
 		15DFEC6A284DEF2C00B479FC /* Coordinator-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				15FFF885284E22440082422E /* CoreDataMANAGER */,
 				15FFF879284E1F370082422E /* ViewModels */,
 				15FFF876284E1E5B0082422E /* Delegates */,
 				15DFEC82284DEF6700B479FC /* Coordinator */,
 				15FFF878284E1F1E0082422E /* Controllers */,
 				15FFF877284E1EFD0082422E /* Another */,
+				15FFF88B284E266D0082422E /* EventList.xcdatamodeld */,
 			);
 			path = "Coordinator-MVVM";
 			sourceTree = "<group>";
@@ -95,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				15DFEC7C284DEF3A00B479FC /* Info.plist */,
-				15DFEC77284DEF3A00B479FC /* Assets.xcassets */,
 				15DFEC79284DEF3A00B479FC /* LaunchScreen.storyboard */,
+				15DFEC77284DEF3A00B479FC /* Assets.xcassets */,
 			);
 			path = Another;
 			sourceTree = "<group>";
@@ -117,6 +123,14 @@
 				15FFF87C284E1F610082422E /* AddEventViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		15FFF885284E22440082422E /* CoreDataMANAGER */ = {
+			isa = PBXGroup;
+			children = (
+				15FFF886284E22610082422E /* CoreDataManager.swift */,
+			);
+			path = CoreDataMANAGER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +210,8 @@
 				15DFEC84284DEF7700B479FC /* Coordinator.swift in Sources */,
 				15DFEC88284DF62000B479FC /* addEventViewController.swift in Sources */,
 				15FFF87B284E1F500082422E /* EventListViewModel.swift in Sources */,
+				15FFF887284E22610082422E /* CoreDataManager.swift in Sources */,
+				15FFF88D284E266D0082422E /* EventList.xcdatamodeld in Sources */,
 				15DFEC6E284DEF2C00B479FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +420,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15FFF88B284E266D0082422E /* EventList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15FFF88C284E266D0082422E /* EventList.xcdatamodel */,
+			);
+			currentVersion = 15FFF88C284E266D0082422E /* EventList.xcdatamodel */;
+			path = EventList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 15DFEC60284DEF2C00B479FC /* Project object */;
 }

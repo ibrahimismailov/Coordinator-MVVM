@@ -9,13 +9,16 @@ import UIKit
 import CoreData
 class EventListViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
-  
+  private let coreDataManager = CoreDataManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "🖊"
         navigationController?.navigationBar.prefersLargeTitles = true
         makeRightBarButton()
+        guard let image = UIImage(named: "ntfl") else {return}
+        coreDataManager.save(name: "Netflix", date: Date(), image: image)
+        
         
      
 
